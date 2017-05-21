@@ -1,1 +1,1 @@
-PointMatrix 
+GeneratePointMatrix

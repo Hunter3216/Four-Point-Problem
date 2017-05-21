@@ -1,8 +1,8 @@
 %This function serves to take user input and turn it into a matrix where
 %each row is a point of coordinates x and y
 
-function[PointMatrix] = GeneratePointMatrix
-
+function[PointMatrix] = GeneratePointMatrix()
+    
     RowsToRemove = []; %Creating variables for later use
     i = 1;
     PointMatrix = zeros(4,2);
@@ -25,5 +25,4 @@ function[PointMatrix] = GeneratePointMatrix
     end
 
     PointMatrix = unique(PointMatrix,'rows');
-
 end
