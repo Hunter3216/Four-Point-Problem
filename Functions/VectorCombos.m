@@ -9,4 +9,4 @@ function[Combos] = VectorCombos(PointMatrix)
     end
 end
 
-
+%Creates number based off of Trangular Number Sequence
