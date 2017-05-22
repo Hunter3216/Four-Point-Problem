@@ -3,8 +3,8 @@
 %to 4 unique points)
 
 
-function[VectorMatrix] = GenerateVectorMatrix(PointMatrix)
-    VectorMatrix = zeros(VectorCombos(PointMatrix),2);
+function[VectorMatrix] = GenerateVectorMatrix(PointMatrix, VectorAmount)
+    VectorMatrix = zeros(VectorAmount,2);
     VectorMatrixRow = 1; %Defining and variables for later use
     NumberOfPoints = size(PointMatrix,1);
 
