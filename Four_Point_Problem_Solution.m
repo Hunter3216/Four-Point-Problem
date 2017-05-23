@@ -18,7 +18,7 @@ elseif (VectorAmount) == 0
     plot([0 PointMatrix(1,1)],[0 PointMatrix(1,2)],'k'); hold on; %plots point connected to origin
 
     %Displays message for user.
-    msgbox({['You entered a single valid point at: ' num2str(PointMatrix(1,:))]; ['If you were to connect that point to the orgin it would be: ' num2str(OnePointData(1,1)) ' units long.'];['The line would make an angle of: ' num2str(OnePointData(1,2)) ' degrees with the positive x-axis']})
+    msgbox({['You entered a single valid point at: (' num2str(PointMatrix(1,1)) ',' num2str(PointMatrix(1,2)) ')']; ['If you were to connect that point to the orgin it would be: ' num2str(OnePointData(1,1)) ' units long.'];['The line would make an angle of: ' num2str(OnePointData(1,2)) ' degrees with the positive x-axis']})
     
 %Case for two valid points given
 elseif (VectorAmount) == 1 

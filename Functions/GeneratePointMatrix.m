@@ -25,4 +25,5 @@ function[PointMatrix] = GeneratePointMatrix()
     end
 
     PointMatrix = unique(PointMatrix,'rows');
+    PointMatrix = DeleteIntersections(PointMatrix);
 end
