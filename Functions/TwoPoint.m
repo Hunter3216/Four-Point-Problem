@@ -55,7 +55,7 @@ function[TwoPointData, UserDialogue] = TwoPoint(PointMatrix, VectorMatrix)
     elseif TwoPointData(1,2) == inf %if the slope is inf then a parametrized equation is given
         UserDialogue = ({['You entered two valid points: (' num2str(PointMatrix(1,1)) ',' num2str(PointMatrix(1,2)) ') (' num2str(PointMatrix(2,1)) ',' num2str(PointMatrix(2,2)) ')'];
             'Since the slope is undefined the function must be written as a parametrization.';
-            ['The line can be expressed by: (0,t) t = ' num2str(PointMatrix(1,2)) ' to ' num2str(PointMatrix(2,2))];
+            ['The line can be expressed by: (' num2str(PointMatrix(1,1)) ',t) t = ' num2str(PointMatrix(1,2)) ' to ' num2str(PointMatrix(2,2))];
             ['The line is: ' num2str(TwoPointData(1,1)) ' units long'];
             ['The slope is: ' num2str(TwoPointData(1,2))];
             XInt;
