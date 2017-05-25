@@ -11,7 +11,7 @@ function[VectorMatrix] = GenerateVectorMatrix(PointMatrix, VectorAmount)
     %These nested for loops create vectors in this order of points: 2-1 3-1 4-1 3-2
     %4-2 4-3
     for Subtrahend = 1 : NumberOfPoints-1
-
+        
         Minuend = 1 + Subtrahend;
 
         for x = Minuend : NumberOfPoints
