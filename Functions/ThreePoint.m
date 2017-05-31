@@ -51,9 +51,9 @@ function[UserDialogue] = ThreePoint(PointMatrix, VectorMatrix)
         end
     end 
    PlotGrid(GridSize) %plots grids and each line segment.
-   plot([PointMatrix(1,1) PointMatrix(2,1)],[PointMatrix(1,2) PointMatrix(2,2)],'k'); hold on;
-   plot([PointMatrix(1,1) PointMatrix(3,1)],[PointMatrix(1,2) PointMatrix(3,2)],'k'); hold on;
-   plot([PointMatrix(2,1) PointMatrix(3,1)],[PointMatrix(2,2) PointMatrix(3,2)],'k');
+   plot([PointMatrix(1,1) PointMatrix(2,1)],[PointMatrix(1,2) PointMatrix(2,2)],'k','LineWidth',2); hold on;
+   plot([PointMatrix(1,1) PointMatrix(3,1)],[PointMatrix(1,2) PointMatrix(3,2)],'k','LineWidth',2); hold on;
+   plot([PointMatrix(2,1) PointMatrix(3,1)],[PointMatrix(2,2) PointMatrix(3,2)],'k','LineWidth',2);
    
    UserDialogue = ({['You entered 3 valid points: (' num2str(PointMatrix(1,1)) ','  num2str(PointMatrix(1,2)) ') ('  num2str(PointMatrix(2,1)) ','  num2str(PointMatrix(2,2)) ') ('  num2str(PointMatrix(3,1)) ','  num2str(PointMatrix(3,2)) ')'];
        ['These 3 points form to make ' Type ' triangle with an area of ' num2str(Area) ' units squared'];
